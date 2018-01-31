@@ -21,4 +21,6 @@ $config = [
 
 $app = Factory::officialAccount($config);
 
-var_dump($app->user->list());
+$response = $app->user->list();
+
+var_dump($response['data']);
